@@ -1,0 +1,21 @@
+{
+    "name": "ronuz/laravel-sms-verification",
+    "description": "Library for sending out and verifying SMS codes using AWS SNS",
+    "keywords": ["laravel", "sms", "verification", "aws"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ronald Nolasco",
+            "email": "ronaldnolasco15@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.62"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ronuz\\SMSVerification\\": "src/"
+        }
+    }
+}
