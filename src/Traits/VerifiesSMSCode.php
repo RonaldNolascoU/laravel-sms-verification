@@ -4,7 +4,7 @@ namespace Ronuz\SMSVerification\Traits;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Str;
-use Ronuz\SMSVerification\RonuzSNSClientFacade;
+use Ronuz\SMSVerification\SNSClientFacade;
 use Ronuz\SMSVerification\Exceptions\TooManySMSVerificationAttempts;
 
 /**
