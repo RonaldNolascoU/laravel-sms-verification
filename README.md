@@ -31,6 +31,13 @@ Add the service provider in ```config/app.php```
 Ronuz\SMSVerification\SMSVerificationServiceProvider::class,
 ```
 
+Add your AWS credentials to you .env file:
+```
+OTP_AWS_SMS_ID=your-aws-access-key-id
+OTP_AWS_SMS_SECRET=your-aws-secret-access-key,
+```
+NOTE: Please reffer to AWS documentation for best practices regarding AWS credentials and possibly consider creating a dedicated user with limitted privileges only for sending SMS messages
+
 You can add SMS Verification to any model, and it will create:
 
 * a function **setSMSVerificationNumber($mobile)** - sets the mobile number and sends out the SMS message containg the verification code
