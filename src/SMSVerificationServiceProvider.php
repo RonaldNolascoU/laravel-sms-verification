@@ -43,7 +43,7 @@ class SMSVerificationServiceProvider extends ServiceProvider
 
             return new SnsClient([
                 'version'     => 'latest',
-                'region'      => 'us-west-2',
+                'region'      => env('OTP_AWS_REGION'),
                 'credentials' => [
                     'key'    => env('OTP_AWS_SMS_ID'),
                     'secret' => env('OTP_AWS_SMS_SECRET'),
